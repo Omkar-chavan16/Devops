@@ -1,0 +1,38 @@
+STEP 1 : create new repository in Github and naming
+STEP 2 : create server in AWS,update and install package manager.
+        #apt update -y
+        #apt install apache2 -y
+        #systemctl start apache2
+        #systemctl enable apache2
+        #systemctl status apache2
+STEP 3 : install Git in same server.
+        #apt install git-all -y
+        #git version , #git -v 
+STEP 4 : create one directory
+       :#mkdir devops
+STEP 5 : set this directory as working directory
+        #git init devops 
+        #ls -a
+STEP 6 : create clone repository in same server
+        #git clone (Github repo HTTP link )
+STEP 7 : create one new file for code
+        #cat > Day-1
+STEP 8 : Add this file in stagging area
+        #git add .  or #git add <filename> Day-1
+STEP 9 : To check whether it is in stagging area or not
+        #git status
+       : To one step back from stagging area and removed tracking
+        #git rm --cached <filename> Day-1
+       : To one step back from stagging area but track the file.
+        #git restore --staged <filename> Day-1
+STEP 10 : Saved the file in local repository
+        #git commit -m "statement"
+        : To check all commits
+        #git log , #git log --oneline
+STEP 11 : To push file in remote repository or remote location
+        #git push origin main __
+                                |--> login in Github username
+                                |--> password (generate token) __
+                                                                 |-->go to Github account settings,
+                                                                     <>developer settings,personal access token
+                                                                     tokens(classic),generate new classic token.
